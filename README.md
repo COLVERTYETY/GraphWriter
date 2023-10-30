@@ -2,6 +2,8 @@
 
 GraphWriter is a robust, interactive, and visually appealing wrapper for TensorBoard's SummaryWriter, designed to provide real-time insights into your machine learning model's performance right in your terminal. It uses the Rich library to render elegant visualizations, progress bars, and logs, thus turning your mundane terminal into a vibrant dashboard.
 
+![demo](docs/demo.png)
+
 ## Features
 
 - Real-time scalar plots for training and testing metrics.

@@ -8,7 +8,7 @@ setup(
     description='A wrapper for TensorBoard SummaryWriter with real-time terminal visualization using the Rich library.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/your_username/GraphWriter',
+    url='https://github.com/COLVERTYETY/GraphWriter',
     packages=find_packages(),
     install_requires=[
         'torch',
