@@ -17,14 +17,14 @@ GraphWriter is a robust, interactive, and visually appealing wrapper for TensorB
 The project requires `torch`, `rich`, and `asciichartpy` libraries to be installed in your python environment.
 
 ```bash
-pip install -r requirements.txt
+pip install graphWriter
 ```
 
 ## Usage
 
 ```python
 from torch.utils.tensorboard import SummaryWriter
-from GraphWriter import GraphWriter
+from graphWriter import GraphWriter
 
 # Initialize Tensorboard SummaryWriter
 writer = SummaryWriter()
