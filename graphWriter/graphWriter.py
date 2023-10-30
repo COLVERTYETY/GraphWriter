@@ -167,12 +167,6 @@ class GraphWriter:
         progress_layout = self.layout['progress']
         progress_layout.update(self.progress)
         self.console.print(self.layout)
-
-    # def update_print(self, **kwargs) -> None:
-    #     """Updates the print layout."""
-    #     print_layout = self.layout['prints']
-    #     print_layout.update(Panel(self.print_panel_content))
-    #     self.console.print(self.layout, **kwargs)
     
     def print(self, *args, **kwargs) -> None:
         """Custom print function to display text in the print layout."""
@@ -241,5 +235,5 @@ if __name__ == "__main__":
 
         graph_writer.add_scalar('Epochs', e, global_step=e)
         if e % 2 == 0:
-            graph_writer.print(next(resume, f"Processing epoch [blue]{e}[/blue] Accuracy: [green]{test_acc:.2f}[/green]"))
+            graph_writer.print(next(resume, f"[bold]Processing[/bold] epoch [blue]{e}[/blue] Accuracy: [green]{test_acc:.2f}[/green]"))
      

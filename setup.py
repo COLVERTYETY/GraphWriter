@@ -1,7 +1,10 @@
 from setuptools import setup, find_packages
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setup(
-    name='GraphWriter',
+    name='graphWriter',
     version='0.1.0',
     author='Nicolas STAS',
     author_email='nicolas.jan.stas@gmail.com',
@@ -10,11 +13,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/COLVERTYETY/GraphWriter',
     packages=find_packages(),
-    install_requires=[
-        'torch',
-        'rich',
-        'asciichartpy',
-    ],
+    install_requires=required,
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

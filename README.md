@@ -17,7 +17,7 @@ GraphWriter is a robust, interactive, and visually appealing wrapper for TensorB
 The project requires `torch`, `rich`, and `asciichartpy` libraries to be installed in your python environment.
 
 ```bash
-pip install torch rich asciichartpy
+pip install -r requirements.txt
 ```
 
 ## Usage
