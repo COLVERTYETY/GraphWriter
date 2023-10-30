@@ -20,11 +20,21 @@ The project requires `torch`, `rich`, and `asciichartpy` libraries to be install
 pip install graphWriter
 ```
 
+## Example
+
+You can run the example script to see the GraphWriter in action.
+
+```bash
+python -m graphWriter.graphWriter
+```
+
 ## Usage
 
 ```python
 from torch.utils.tensorboard import SummaryWriter
 from graphWriter import GraphWriter
+import math
+import random
 
 # Initialize Tensorboard SummaryWriter
 writer = SummaryWriter()
@@ -53,6 +63,10 @@ for e in graph_writer.track(range(100), description="epochs"):
         graph_writer.add_scalar('Test/Acc', test_acc, global_step=t + e*100)
     
     graph_writer.add_scalar('Epochs', e, global_step=e)
+    graph_writer.print(f"Epoch [green]{e}[/green] completed!")
+# close the writer
+writer.close()
+
 ```
 
 The `GraphWriter` class is initialized with a `SummaryWriter` object, along with optional arguments for setting the maximum number of lines for print statements and progress bars. The `add_scalar` method is used to log scalar values to TensorBoard, and the `track` method is utilized to create progress bars for iterable processes.
