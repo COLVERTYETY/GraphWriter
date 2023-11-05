@@ -1,5 +1,7 @@
 # GraphWriter
 
+[![Test and Deploy to PyPI](https://github.com/COLVERTYETY/GraphWriter/actions/workflows/python-publish.yml/badge.svg)](https://github.com/COLVERTYETY/GraphWriter/actions/workflows/python-publish.yml)
+
 GraphWriter is a robust, interactive, and visually appealing wrapper for TensorBoard's SummaryWriter, designed to provide real-time insights into your machine learning model's performance right in your terminal. It uses the Rich library to render elegant visualizations, progress bars, and logs, thus turning your mundane terminal into a vibrant dashboard.
 
 ![demo](docs/demo.png)
