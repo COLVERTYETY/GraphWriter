@@ -110,6 +110,13 @@ class GraphWriter:
         self.print_panel_content = Text()
         self.print_text = ""
 
+    def __del__(self):
+        """Destructor to close the SummaryWriter when the GraphWriter is deleted."""
+        # clear the console
+        self.console.clear()
+        # close the SummaryWriter
+        self.writer.close()
+
     def add_scalar(self, tag, scalar_value, global_step=None, display=True) -> None:
         """Logs a scalar value to tensorboard and updates the scalar panel."""
         self.writer.add_scalar(tag, scalar_value, global_step)
@@ -237,3 +244,4 @@ if __name__ == "__main__":
         if e % 2 == 0:
             graph_writer.print(next(resume, f"[bold]Processing[/bold] epoch [blue]{e}[/blue] Accuracy: [green]{test_acc:.2f}[/green]"))
      
+    graph_writer.print("training complete!")

@@ -1,4 +1,4 @@
-torch
 rich
 asciichartpy
+torch
 tensorboard
