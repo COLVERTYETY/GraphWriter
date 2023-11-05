@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='graphWriter',
-    version='0.2.0',
+    version='0.5.2',
     author='Nicolas STAS',
     author_email='nicolas.jan.stas@gmail.com',
     description='A wrapper for TensorBoard SummaryWriter with real-time terminal visualization using the Rich library.',
